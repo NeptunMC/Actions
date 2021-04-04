@@ -11,7 +11,7 @@ public class BroadcastActionHandler implements ActionHandler {
     for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
       CompletableFuture.runAsync(() -> {
         onlinePlayer.sendMessage(ActionParser.COLOR.apply(node));
-      });
+      },ActionParser.POOL);
     }
   }
 }

@@ -7,6 +7,6 @@ public class MessageActionHandler implements ActionHandler {
 
   @Override
   public void handle(Player player, String node) {
-    CompletableFuture.runAsync(() -> player.sendMessage(ActionParser.COLOR.apply(node)));
+    CompletableFuture.runAsync(() -> player.sendMessage(ActionParser.COLOR.apply(node)),ActionParser.POOL);
   }
 }

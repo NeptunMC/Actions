@@ -9,6 +9,6 @@ public class ActionBarActionHandler implements ActionHandler {
   public void handle(Player player, String node) {
     CompletableFuture.runAsync(() -> {
       Titles.sendActionBarMessage(player,node);
-    });
+    },ActionParser.POOL);
   }
 }

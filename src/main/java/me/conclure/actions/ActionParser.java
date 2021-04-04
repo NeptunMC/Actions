@@ -4,6 +4,7 @@ import com.google.common.collect.ListMultimap;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ForkJoinPool;
 import java.util.function.UnaryOperator;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
@@ -11,6 +12,7 @@ import org.bukkit.entity.Player;
 import org.spigotmc.CaseInsensitiveMap;
 
 public class ActionParser {
+  static final ForkJoinPool POOL = new ForkJoinPool();
   static final UnaryOperator<String> COLOR = s -> ChatColor.translateAlternateColorCodes('&',s);
 
   private final String splitChar;

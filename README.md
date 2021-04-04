@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'me.conclure.actions:actions:1.0'
+  implementation 'me.conclure.actions:actions:1.1'
 }
 ```
 
@@ -20,7 +20,7 @@ dependencies {
 <dependency>
     <groupId>me.conclure.actions</groupId>
     <artifactId>actions</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <scope>compile</scope>
 </dependency>
 ```
